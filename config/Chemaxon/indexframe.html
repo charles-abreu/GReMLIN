@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="jchem-menu.css">
+<TITLE>Index</TITLE>
+<script language="JavaScript">
+<!--
+function swapImgRestore() { //v2.0
+  if (document.swapImgData != null)
+    for (var i=0; i<(document.swapImgData.length-1); i+=2)
+      document.swapImgData[i].src = document.swapImgData[i+1];
+}
+
+function preloadImages() { //v2.0
+  if (document.images) {
+    var imgFiles = preloadImages.arguments;
+    if (document.preloadArray==null) document.preloadArray = new Array();
+    var i = document.preloadArray.length;
+    with (document) for (var j=0; j<imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+      preloadArray[i] = new Image;
+      preloadArray[i++].src = imgFiles[j];
+  } }
+}
+
+function swapImage() { //v2.0
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.swapImgData;
+  for (i=0; i < (swapImage.arguments.length-2); i+=3) {
+    objStr = swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = swapImage.arguments[i+2];
+  } }
+  document.swapImgData = swapArray; //used for restore
+}
+//-->
+</script>
+</HEAD>
+
+<BODY onLoad="preloadImages('images/chemaxon_high.gif','#927637091190')">
+
+ 
+<div id="leftmenu-box">
+<a href="." target="_parent"><img src="images/jchem2.gif" width="163" height="50" border="0" alt="" id=""></a>
+	<div id="leftmenu">
+    <div id="leftmenu-lenia"><img src="images/spacer.gif" width="1" height="1"></div>
+    <div id="leftmenu-cont">
+      <a href="Readme.html" target="content" class="leftmenu">
+      <div>JChem Package</div>
+      </a>
+	  <!--<a href="intro/index.html" target="content" class="leftmenu">
+      <div>Introduction</div>
+      </a>-->
+	  <a href="doc/user/index.html" target="content" class="leftmenu">
+      <div>User's Guide</div>
+      </a>
+	  <a href="doc/dev/index.html" target="content" class="leftmenu">
+      <div>Developer's Guide</div>
+      </a>
+	  <a href="doc/dev/java/api/index.html" target="_blank" class="leftmenu">
+      <div>API</div>
+      </a>
+	  <a href="doc/admin/index.html" target="content" class="leftmenu">
+      <div>Administration<br> Guide</div>
+      </a>
+	  <a href="FAQ.html" target="content" class="leftmenu">
+      <div>FAQ</div>
+      </a>
+	  <a href="changes.html" target="content" class="leftmenu">
+      <div>History of changes</div>
+      </a>
+	  <a href="examples/index.html" target="content" class="leftmenu">
+      <div>Code examples</div>
+      </a>
+	  <a href="http://www.chemaxon.com/forum/index.php" target="_blank" class="leftmenu">
+      <div>Support forum</div>
+      </a>
+	  <!-- <a href="examples/index.html" target="content" class="leftmenu">
+      <div>Examples</div>
+      </a>
+	  <a href="marvin/doc/index.html" target="_blank" class="leftmenu">
+      <div>Marvin Applets<br> and Beans</div>
+      </a>
+	  -->
+	</div>
+    <div id="leftmenu-lenia"><img src="images/spacer.gif" width="1" height="1"></div>
+<center><a href="http://www.chemaxon.com" target="_blank"><img border="0" src="images/chemaxon-logo.gif" width="70" height="65" id="chemaxon-logo"></a></center>
+  </div>
+</div>
+
+</BODY>
+</HTML>
+

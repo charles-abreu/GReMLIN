@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "aromatic",
+            "atomTypeInt": "3",
+            "atomName": "CZ",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O",
+            "residueNumber": "121",
+            "residueName": "GLY",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "A",
+            "atomType": "acceptor/aromatic/donor",
+            "atomTypeInt": "30",
+            "atomName": "N4",
+            "residueNumber": "500",
+            "residueName": "NEO",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 2,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.5619955113153496"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "aromatic",
+            "interactionTypeInt": 17,
+            "distance": "3.48515666792757"
+        }
+    ],
+    "id": 0,
+    "string": "v 0 3\nv 1 2\nv 2 30\ne 0 2 17\ne 1 2 29\n",
+    "group": "1",
+    "pdbID": "1BR5.A"
+}

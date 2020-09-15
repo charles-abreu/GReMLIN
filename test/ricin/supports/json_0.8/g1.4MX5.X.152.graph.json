@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "X",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "N",
+            "residueNumber": "123",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "X",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "OAN",
+            "residueNumber": "301",
+            "residueName": "5MX",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.9189842411359477"
+        }
+    ],
+    "id": 152,
+    "string": "v 0 5\nv 1 2\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "4MX5.X"
+}

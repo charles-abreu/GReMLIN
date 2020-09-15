@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="d0" for="node" attr.name="nodetype" attr.type="int"/>
+<key id="d1" for="edge" attr.name="edgetype" attr.type="int"/>
+<key id="d2" for="node" attr.name="nodelabel" attr.type="string"/>
+<key id="d3" for="edge" attr.name="edgelabel" attr.type="string"/>
+<key id="d4" for="edge" attr.name="edgeDistance" attr.type="int"/>
+<graph id="131" edgedefault="undirected">
+<node id="n0">
+<data key="d0">21</data>
+<data key="d2">PHE:240:CD1</data>
+</node>
+<node id="n1">
+<data key="d0">21</data>
+<data key="d2">PHE:240:CE1</data>
+</node>
+<node id="n2">
+<data key="d0">7</data>
+<data key="d2">MLA:304:C2</data>
+</node>
+<node id="n3">
+<data key="d0">7</data>
+<data key="d2">MLA:304:C3</data>
+</node>
+<edge id="e0" source="n0" target="n2">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.7999744735984753</data>
+</edge>
+<edge id="e1" source="n1" target="n2">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.396836763814241</data>
+</edge>
+<edge id="e2" source="n1" target="n3">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.6616615081134958</data>
+</edge>
+</graph>
+</graphml>

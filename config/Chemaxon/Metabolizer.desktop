@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Metabolizer
+Exec=/bin/sh "/scratch/cvbioinfo/software/Chemaxon/Metabolizer"
+Icon=/scratch/cvbioinfo/software/Chemaxon/.install4j/Metabolizer.png
+Categories=Application;

@@ -1,0 +1,131 @@
+drop indextype jc_idxtype;
+
+drop operator jc_contains;
+drop operator jc_equals;
+drop operator jc_compare;
+drop operator jc_compare_vb;
+drop operator jc_evaluate;
+drop operator jc_evaluate_x;
+drop operator jc_tanimoto;
+drop operator jc_tversky;
+drop operator jc_dissimilarity;
+drop operator jc_molweight;
+drop operator jc_formula;
+drop operator jc_formula_eq;
+drop operator jc_matchcount;
+drop operator jc_react;
+drop operator jc_react4;
+drop operator jc_standardize;
+drop operator jc_transform;
+drop operator jc_molconvert;
+drop operator jc_molconvertb;
+
+drop operator jc_containsb;
+drop operator jc_equalsb;
+drop operator jc_compareb;
+drop operator jc_evaluateb;
+drop operator jc_evaluateb_x;
+drop operator jc_tanimotob;
+drop operator jc_dissimilarityb;
+drop operator jc_molweightb;
+drop operator jc_formulab;
+drop operator jc_formula_eqb;
+drop operator jc_matchcountb;
+drop operator jc_reactb;
+drop operator jc_reactb4;
+drop operator jc_standardizeb;
+drop operator jc_molconvertbb;
+
+drop function Contains_Func;
+drop function Equals_Func;
+drop function Compare_Func;
+drop function MatchCount_Func;
+drop function Tanimoto_Func;
+drop function Dissimilarity_Func;
+drop function Molweight_Func;
+drop function Formula_Func;
+drop function Formula_Func_eq;
+drop function Transform_Func;
+drop function React_Func;
+drop function React4_Func;
+drop function Standardize_Func;
+drop function Molconvert_Func;
+drop function MolconvertB_Func;
+drop function Evaluate_Func;
+drop function EvaluateX_Func;
+drop function User_Def_Func;
+drop function jc_insert;
+drop procedure jc_update;
+drop procedure jc_delete;
+drop procedure jc_set_default_property;
+
+drop function Contains_FuncC;
+drop function Equals_FuncC;
+drop function Compare_FuncC;
+drop function Compare_FuncCV;
+drop function MatchCount_FuncC;
+drop function Tanimoto_FuncC;
+drop function Dissimilarity_FuncC;
+drop function Molweight_FuncC;
+drop function Formula_FuncC;
+drop function Formula_Func_eqC;
+drop function React4_FuncC;
+drop function Standardize_FuncC;
+drop function MolconvertB_FuncC;
+drop function Evaluate_FuncC;
+drop function EvaluateX_FuncC;
+drop function User_Def_FuncC;
+-- drop function jc_insertc;
+-- drop procedure jc_updatec;
+
+drop function Contains_FuncB;
+drop function Equals_FuncB;
+drop function Compare_FuncB;
+drop function Compare_Func_BQuery;
+drop function MatchCount_FuncB;
+drop function Tanimoto_FuncB;
+drop function Dissimilarity_FuncB;
+drop function Molweight_FuncB;
+drop function Formula_FuncB;
+drop function Formula_Func_eqB;
+drop function React_FuncB;
+drop function React4_FuncB;
+drop function Standardize_FuncB;
+drop function MolconvertB_FuncB;
+drop function Evaluate_FuncB;
+drop function EvaluateX_FuncB;
+drop function User_Def_FuncB;
+drop function jc_insertb;
+drop procedure jc_updateb;
+
+drop package jchem_blob_pkg;
+drop package jchem_clob_pkg;
+drop package jchem_util;
+
+drop package jchem_refcur_pkg;
+drop package jchem_core_pkg;
+drop package jchem_func_pkg;
+drop package jchem_misc_pkg;
+drop package jchem_table_pkg;
+drop package jcf;
+
+drop type jc_idxtype_im;
+
+drop type CD_ID_ARRAY;
+drop type RESARRAY;
+drop type RIDARRAY;
+drop type MOLPROPS_ARRAY_ARRAY;
+drop type MOLPROPS_ARRAY;
+drop type composite_char;
+drop type comp_char_array;
+drop type composite_blob;
+drop type comp_blob_array;
+drop type char_product_record;
+drop type char_product_array;
+drop type blob_product_record;
+drop type blob_product_array;
+
+drop sequence jchem_idxscan_no_sq;
+drop sequence jchem_sessionid_sq;
+
+exit

@@ -1,0 +1,235 @@
+<HTML>
+<HEAD>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="jchemmanuals.css">
+<TITLE>Readme</TITLE>
+</HEAD>
+
+<BODY>
+<center>
+<h1>JChem Release Information</h1>
+<h2>Version 5.3.8</h2>
+</center>
+
+<p>
+<ul>
+<li><a href="#content">Content of the JChem Package</a>
+<li><a href="#lickey">Licensing Issues</a>
+<li><a href="changes.html">History of Changes</a>
+</ul>
+</p>
+
+<center><div class="lenia">&nbsp;</div></center>
+
+<a name="content"></a><h2>Content of the JChem Package</h2>
+
+<p>After decompressing the appropriate archive file in a directory,
+the <code>jchem</code> subdirectory is created, which contains 
+the files of the JChem system.
+Since JChem is 100% Java, it runs in practically all modern 
+operating systems. 
+<b>See the <a href="doc/admin/prepscripts.html">software requirements 
+and the details on preparing and running the scripts and batch files</a></b>.
+
+<OL>
+    <LI><b><a href="doc/dev/index.html">JChem Class Library</a></b>, a library of 
+    Java classes for
+    <ul>
+	<li>substructure and similarity searching
+	<li>inserting and modifying data in structure tables
+	<li>manipulating structures
+	<li>Marvin Beans:
+	<ul>
+	    <li>MarvinSketch JavaBean for structure input and modification. 
+	    <li>MarvinView JavaBean for displaying structures.
+	</ul>
+	Java applets with the same functionality are available at the
+	<A href="http://www.chemaxon.com/marvin/download.html" target=_blank
+	>Marvin download page</A>
+    </ul>
+    
+    <LI><b><a href="doc/admin/index.html">JChemManager</a></b>,
+    a Java application with a graphical 
+    interface (Some operations are also available in command line). 
+    Main features:
+    <UL>
+        <LI>Creation and removal of structure tables 
+        <LI>SDfile, Molfile, SMILES import/export.</LI>   
+    </UL>        
+    Usage of GUI program: run <code>jcman</code>.<br>
+    Usage of command line program: run <code>jcman -h</code> for help.<br>
+
+    <LI><b>MarvinSketch application</b> 
+    for drawing structures.<br>
+    Run <code>msketch -h</code> for help. 
+
+    <LI><b>MarvinView application</b>
+    for displaying structure files.<br>
+    Run <code>mview -h</code> for help.
+
+    <LI><b>MarvinSpace application</b>
+    for high performance 3D visualization.<br>
+    Run <code>mspace -h</code> for help. 
+
+    <LI><b>MolConverter</b>
+    application for interconverting structure files in different formats.<br>
+    Run <code>molconvert -h</code> for help. 
+
+    <LI><b>JChemSearch</b>
+    application for substructure searching in structure files
+    from command line.<br>
+    Run <code>jcsearch -h</code> for help. 
+
+    
+    <LI><b><a href="doc/admin/JKlustor.html">JKlustor</a></b>
+    is an add-on module for clustering. It includes
+	<ul>
+	<li><b><a href="doc/admin/GenerFP.html">GenerFP</a></b> 
+	is an application for generating fingerprints that can be applied for
+	    <ul>
+	    <li>similarity/diversity analysis.
+	    <li><a href="doc/admin/fingerprint.html"
+	    >fine tuning substructure/similarity search in databases</a>.
+	    </ul>
+	Run <code>generfp -h</code> for help. 
+	    
+	<li><b><a href="doc/admin/Compr.html">Compr</a></b> is an 
+	application 
+	for diversity/dissimilarity calculations between compound 
+	libraries.<br>
+	Run <code>compr -h</code> for help. 
+	
+	<li><b><a href="doc/admin/Jarp.html">Jarp</a></b> is an application 
+	for Jarvis-Patrick clustering.<br>
+	Run <code>jarp -h and/or nneib -h</code> for help.
+
+	<li><b><a href="doc/admin/Ward.html">Ward</a></b> clusters 
+	molecules using Ward's hierarchic method.<br>
+	Run <code>ward -h</code> for help.
+	
+	<li><b><a href="doc/admin/CreateView.html">CreateView</a></b>
+	composes a new SDfile from an SDfile and a data table. It is
+	useful for viewing the results of clustering.<br>
+	Run <code>crview -h</code> for help.
+
+        </UL>
+
+    <LI><b><a href="doc/user/Screen.html">Screen</a></b>
+        is a collection of tools for virtual screening. It includes
+	<ul>
+
+        <li><B><a href='doc/user/PMapper.html'>PMapper</A></B> perceives
+        pharmacophoric points in molecular structures and assigns pharmacophore
+        types to atoms.<br>
+        Run <code>pmapper -h</code> for help.</LI>
+
+        <li><b><a href="doc/user/GenerateMD.html">GenerateMD</A></B> generates
+        <i>Molecular Descriptors</I> for molecular structures. Such descriptors
+        are suitable for virtual screening.<br>
+        Run <code>generatemd -h</CODE> for help.</LI>
+
+        <LI><b><a href="doc/user/ScreenMD.html">ScreenMD</A></B> performs
+        virtual screening of large compound databases using molecular
+        descriptors. The screening procedure is based on the comparison of
+        molecular descriptors using various <i>dissimilarity metrics</I>.<br>
+        Run <code>screenmd -h</CODE> for help.</LI>
+
+        <li><b><a href='doc/user/OptimizeMetrics.html'>OptimizeMetrics</A></B>
+        optimizes parameters of dissimilarity metrics in order to achieve
+        the best hit ratio (highest enrichment factor) in screening.<BR>
+        Run <code>optimizemetrics -h</CODE> for help.</LI>
+
+        <lI><b><a href='doc/user/HitStatistics.html'>HitStatistics</A></B>
+        evaluates the performance of the optimized metrics.<br>
+        Run <code>hitstatistics -h</CODE> for help.</LI>
+
+        <li><b><a href='doc/user/ScreeningOptimizer.html'>ScreeningOptimizer</a></B>
+        integrates <code>OptimizeMetrics</CODE> and <CODE>HitStatistics</CODE>
+        in one tool for easier use.<BR>
+        Run <code>screeningoptimizer -h</CODE> for help.</LI>
+        </UL>
+
+   <li><b>Molecular Transformations</a></b>
+	<ul>
+	<li><b><a href='doc/user/Standardizer.html'>Standardizer</a></B>    
+	is a structure canonicalization tool converting molecules from different sources
+	into standard representations. The standardization process helps to automate
+	the identification of mesomers and tautomers and can be used for counter ion
+	removal.<br>
+	Run <code>standardize -h</code> for help.</li>
+	</ul>
+
+   <li><b>Reaction Processing</b> 
+	<ul>
+
+        <li><b><a href="doc/user/Reactor.html">Reactor</a></b>
+	performs chemical reactions by processing reactants to products
+	according to generic reaction equations. The tool evaluates Chemical Terms
+	containing <a href="doc/user/Evaluator.html">complex expressions</a>
+	built from structural and reactivity conditions.<br>
+        Run <code>react -h</CODE> for help.</li>
+
+	</ul>
+
+   <li><b>Drug Design</a></b> 
+        <ul>
+
+	<li><b><a href="doc/user/Fragmenter.html">Fragmenter</a></b>
+	cleaves input molecules into fragments by opening chemical bonds along
+	configurable cleavage reactions. Additional cleavage rules can be added
+	(e.g. never cut a bond connecting a hetero atom and a ring carbon,
+	never cut ring-bonds) to the base cleavage mechanism. The current release
+	defines one such cleavage rule set: the RECAP method.<br>
+	Run <code>fragment -h</code> for help.</li>
+
+	</ul>
+
+   <li><b><a href='doc/user/Config.html'>XML Configuration Editor</a></B>
+   provides a graphical environment in which you can edit configuration files needed for 
+   JChem programs such as ScreenMD or OptimizeMetrics.<BR>
+    Run <code>config -h</CODE> for help.</LI>
+
+    <LI><b><a href="examples/index.html">Example JSP and ASP scripts</a></b>
+    showing how to write 
+    custom web applications that search, display, modify and insert
+    mixed chemical and corporate data.
+
+    <li><b><A href="license.html">JChem license file</a></b>
+</OL>            
+
+<p>For information on versions, see the 
+<a href="changes.html">list of changes</a>.
+</p>
+
+<center><div class="lenia">&nbsp;</div></center>
+
+<a name="lickey"></a><h2>Licensing Issues</h2>
+
+<p>If you have not received a 
+<a href="doc/admin/regcode.html">license key</a> from ChemAxon
+yet, then please 
+<script language="JavaScript"><!--
+document.write('<a href="mailto:'+
+'sales'+'@'+'chemaxon.com">');
+//--></script>contact us</a>
+Without a <a href="doc/admin/regcode.html">license key</a> for JChem,
+the system is in demo mode that allows one structure search 
+per minute. Without a license key for 
+<a href="doc/admin/JKlustor.html">JKlustor</a>,
+clustering database structures is limited to 1000 rows.
+In demo mode the components of the JChem package may only be used
+<ul>
+<li>for testing
+<li>within one month after installation.
+</ul>
+
+<center><div class="lenia">&nbsp;</div></center>
+<center>
+<font size="-2" face="helvetica">
+Copyright &copy; 1999-2010 
+<a href="http://www.chemaxon.com">ChemAxon Ltd.</a>
+&nbsp;&nbsp;&nbsp;All rights reserved.
+</font>
+</center>
+
+</body>
+</html>

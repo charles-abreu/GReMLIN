@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=JChemManager
+Exec=/bin/sh "/scratch/cvbioinfo/software/Chemaxon/JChemManager"
+Icon=/scratch/cvbioinfo/software/Chemaxon/.install4j/JChemManager.png
+Categories=Application;

@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                37
+            ],
+            "index": 0,
+            "chain": "X",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "N",
+            "residueNumber": "81",
+            "residueName": "VAL",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                37
+            ],
+            "index": 1,
+            "chain": "X",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "N2",
+            "residueNumber": "1",
+            "residueName": "JP3",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                37
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.9910616844190954"
+        }
+    ],
+    "id": 75,
+    "string": "v 0 5\nv 1 2\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "3PX9.X"
+}

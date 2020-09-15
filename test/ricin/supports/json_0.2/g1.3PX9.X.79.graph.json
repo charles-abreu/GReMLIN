@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "X",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH2",
+            "residueNumber": "180",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "X",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O1",
+            "residueNumber": "1",
+            "residueName": "JP3",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.722419144804855"
+        }
+    ],
+    "id": 79,
+    "string": "v 0 55\nv 1 2\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "3PX9.X"
+}

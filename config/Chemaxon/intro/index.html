@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../jchemmanuals.css"
+ title="Style">
+  <title>Introduction</title>
+</head>
+<body>
+
+<center>
+<h1>Introduction to the JChem suite</h1>
+</center>
+
+<h2><a name="desc"></a>Short Description</h2>
+
+JChem is a suite of integrated programs and toolkits for many cheminformatics
+tasks. Its components include chemical database engines, chemical structure
+editor and visualization tools, physicochemical property predictors
+and other tools for chemical structure manipulation. Most components come with
+intuitive graphical user interface and all are accessible through
+<a href="../doc/dev/java/api">Java</a> and
+<a href="../doc/dev/dotnet/index.html">.NET</a> API (Application Programming
+Interface) and command-line(batch) tools.
+<p>
+As the JChem suite was developed in Java, it is
+available on major platforms and the components are ideal for intra-
+and internet applications and web-based delivery. (Through the use of Java applets or
+Java Web Start.) The distribution contains numerous web and standalone
+application examples.
+<br/><br/>
+<table style="background-color:#e4f1f1; border:1px solid; border-color: #077179">
+<tr><td width="600"><h2 style="margin:5px 0px 0px 5px">What is new in version 5.3?</h2>
+ <ul>
+   	<li><strong> Homology group on the query side</strong></li>
+	<li><strong>VMN files in Markush tables</strong></li>
+<li><strong> Support of Screen descriptors and Markush in JChem Cartridge</strong></li>
+<li><strong> New clustering methods in JKlustor </strong></li>
+	<li><strong> Faster combinatorial more reaction processing in Reactor </strong></li>
+
+ </ul>
+<p align="right"><a href="../release_notes.html">Detailed release notes</a></p>
+</td></tr></table>
+<br/>
+<h2><a name="modules"></a>Modules of the JChem suite<br></h2>
+
+JChem comprises the following modules:
+
+<table border="0" cellspacing="0" cellpadding="5">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.chemaxon.com/product/jc_base.html">JChem
+Base</a><br>
+      </td>
+      <td style="vertical-align: top;">adds a <b>chemical interface to relational database
+		      engines</b>, which can be applied for combined SQL and
+	      chemical structure queries;<br>
+	      imports/exports molecules, reactions, query and Markush structures in standard
+	      formats (Molfile, SD file, RD file, SMILES, SMARTS, CML, etc.). It is integrated
+	      with physico-chemical calculations(calculated columns) and Standardizer for structure
+	      canonicalization. Many different RDBMS engines are supported.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.chemaxon.com/product/jc_cart.html">JChem Cartridge</a><br>
+      </td>
+      <td style="vertical-align: top;">adds chemical operators and JChem indexes to the
+	      <b>Oracle SQL language</b>. Can handle structure tables of JChem Base and other free-form
+	      tables containing chemical structure data. Also provides interface to other JChem
+	      modules (calculations, standardization, molecule enumeration, format conversions, etc).<br>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.chemaxon.com/product/standardizer.html">Standardizer</a></td>
+      <td><b>transforms chemical structures</b> based on a configuration. It is useful for canonicalization of molecules from
+different formats into standard representation.</td>
+    </tr>
+      <tr>
+          <td><a href="http://www.chemaxon.com/product/reactor.html">Reactor</a>
+          </td>
+          <td>generates reaction products from reaction equations and
+              reactants.</td>
+      </tr>
+      <tr>
+          <td>
+              <a href="http://www.chemaxon.com/product/jklustor.html">JKlustor</a>
+          </td>
+          <td><b>clusters</b> molecular libraries by a novel <b>maximum common
+              substructure</b>(MCS) based algorithm or by using molecular
+              descriptors
+              with Jarvis-Patrick or Ward algorithms. Also suitable for
+              diversity
+              calculations.</td>
+          <td><br></td>
+      </tr>
+      <tr>
+      <td><a href="http://www.chemaxon.com/product/screen.html">Screen</a></td>
+      <td>performs <b>similarity screening</b> based on different descriptors, like pharmacophore or chemical fingerprints, BCUT, etc.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.chemaxon.com/product/fragmenter.html">Fragmenter</a></td>
+      <td>decomposes structures based on a scaffold (<b>R-group
+          decomposition</b>) or <b>generates building blocks</b> based on
+          cleavage rules from molecule libraries.</td>
+    </tr>
+    <tr>
+      <td><a href="../doc/user/Evaluator.html">Chemical Terms Evaluator</a></td>
+      <td><b>evaluates chemical expressions and conditions</b>. Integrated with the
+      calculators and JChem Base (through calculated columns and Chemical Terms
+          search filter).</td>
+    </tr>
+    <tr>
+      <td><a href="../doc/user/Metabolizer.html">Metabolizer</a></td>
+      <td>enumerates all or major <b>metabolites</b>, concludes the metabolic 
+	  <b>pathways</b> of a given compound and estimates the metabolic <b>stability</b>.
+	</td>
+    </tr>
+    <tr>
+      <td colspan="2">The JChem suite also contains the full Marvin suite:
+    </tr>
+      <tr>
+          <td><a href="http://www.chemaxon.com/product/msketch.html">MarvinSketch</a></td>
+          <td> is a 2D/3D chemical <b>structure editor</b> for drawing molecules,
+              queries, reactions and Markush structures. It is integrated with
+              the calculator plugins, MarvinView and MarvinSpace.
+          </td>
+          <td><br></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.chemaxon.com/product/mview.html">MarvinView</a></td>
+          <td>is a 2D/3D chemical <b>viewer</b> for single and multiple chemical
+              structures, queries and reactions. It is integrated with the
+              calculator plugins, MarvinSketch and MarvinSpace.
+          </td>
+          <td><br></td>
+      </tr>
+      <tr>
+          <td><a href="http://www.chemaxon.com/product/mspace.html">MarvinSpace</a></td>
+	  <td>is a <b>high performance 3D</b> molecule visualization tool.</td>
+          <td><br>
+          </td>
+      </tr>
+      <tr>
+          <td><a href="http://www.chemaxon.com/product/calc_pl_land.html">Calculator plugins</a></td>
+          <td>are ChemAxons range of structure based <b>prediction tools</b>.
+              They are integrated with MarvinSketch and MarvinView, JChem Base
+              (calculated columns and Chemical Terms filter search) and Reactor
+	  (reaction rules).
+          </td>
+      </tr>
+      <tr>
+          <td><a href="../marvin/help/applications/molconvert.html">Molconvert application</a></td>
+	  <td>is a command line program that converts between <b>various chemical file types</b>.</td>
+          <td><br>
+          </td>
+      </tr>
+  </tbody>
+</table>
+<br>
+<h3>Notes</h3>
+
+<ol>
+    <li>Although the modules are shipped together and are tightly
+        integrated, they are licensed separately. See more details
+        <a href="../doc/user/Licenses.html">here</a>.</li>
+    <li><a href="http://www.chemaxon.com/product/ijc.html">Instant JChem</a>,
+        our desktop chemical database application, is not part of the
+        JChem suite, although it relies on many JChem components. </li>
+    <li>JChem Web Services is available as a separate download. </li>
+</ol>
+
+The following diagram shows which ChemAxon products are included in the JChem
+suite from the ChemAxon product line.
+
+<p align="center"><img alt="model" border="0" src="jchem_modules.png"></p>
+
+<h2><a name="doc">Documentation</a><br></h2>
+
+The following links provide the starting points to documentation:
+<ul>
+    <li><a href="../doc/user/index.html" target="_blank">Users guide</a></li>
+    <li><a href="../doc/dev/index.html"
+           target="_blank">Developers guide</a></li>
+    <li><a href="../doc/dev/java/api/index.html"
+           target="_blank">API documentation</a></li>
+    <ul>
+        <li><a href="../doc/dev/dotnet/index.html"
+               target="_blank">.NET connectivity</a></li>
+    </ul>
+    <li>Administration guide
+    <ul>
+        <li><a href="../doc/admin/index.html"
+               target="_blank">JChem Base</a></li>
+        <li><a href="../doc/admin/cartridge.html"
+               target="_blank">JChem Cartridge</a></li>
+        <li><a href="../doc/user/Licenses.html"
+               target="_blank">Licensing</a></li>
+    </ul></li>
+    <li>FAQ
+        <ul>
+            <li><a href="../FAQ.html"
+                   target="_blank">JChem Base and Cartridge</a></li>
+            <li><a href="../doc/user/ReactorFAQ.html"
+                   target="_blank">Reactor</a></li>
+        </ul></li>
+    <li><a href="../changes.html" target="_blank">History of changes</a></li>
+    <li><a href="../examples/index.html" target="_blank">Code examples</a></li>
+    <li><a href="http://www.chemaxon.com/forum/"
+           target="_blank">Technical support forums</a></li>
+</ul>
+
+
+<h2><a name="papers"></a>Papers</h2>
+<p>See our <a href="http://www.chemaxon.com/conf/index.html">recent
+papers</a>, which discuss the features and applications of our
+products.
+</p>
+<center>
+<table>
+<tr>
+<td><img src="../images/windows.gif" alt="Windows"></td>
+<td><img src="../images/mac.gif" alt="Mac OS X"/></td>
+<td><img src="../images/solaris_ready.gif" alt="Solaris"/></td>
+<td><img src="../images/linux.jpg" alt="Linux"/></td>
+</tr>
+</table>
+</center>
+<center><div class="lenia">&nbsp;</div></center>
+<center><font size="-2" face="helvetica">
+Copyright &copy; 1999-2010 <a href="http://www.chemaxon.com">ChemAxon
+Ltd.</a>
+&nbsp;&nbsp;&nbsp;All rights reserved.
+</font></center>
+</body>
+</html>

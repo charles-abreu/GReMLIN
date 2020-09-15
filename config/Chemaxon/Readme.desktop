@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Readme
+Exec=/bin/sh "/scratch/cvbioinfo/software/Chemaxon/Readme"
+Categories=Application;

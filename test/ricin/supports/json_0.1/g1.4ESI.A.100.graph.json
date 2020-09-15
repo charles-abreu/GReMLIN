@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CE2",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "aromatic",
+            "atomTypeInt": "3",
+            "atomName": "C4",
+            "residueNumber": "301",
+            "residueName": "0RB",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "aromatic",
+            "interactionTypeInt": 17,
+            "distance": "3.437449199624629"
+        }
+    ],
+    "id": 100,
+    "string": "v 0 21\nv 1 3\ne 0 1 17\n",
+    "group": "1",
+    "pdbID": "4ESI.A"
+}

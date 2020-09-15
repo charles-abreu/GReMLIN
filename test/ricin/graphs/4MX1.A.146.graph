@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NE",
+            "residueNumber": "196",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "positive",
+            "atomTypeInt": "11",
+            "atomName": "CZ",
+            "residueNumber": "196",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O1A",
+            "residueNumber": "303",
+            "residueName": "MLA",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.994186420229024"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "5.94772805363527"
+        }
+    ],
+    "id": 146,
+    "string": "v 0 55\nv 1 11\nv 2 26\ne 0 2 19\ne 1 2 19\n",
+    "group": "1",
+    "pdbID": "4MX1.A"
+}

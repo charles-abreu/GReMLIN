@@ -1,0 +1,311 @@
+<!DOCTYPE project [
+       <!ENTITY common SYSTEM "common.xml">
+]>
+
+<project name="Setup JCart tests" default="all">
+
+    <property environment="env"/>
+    
+    <property file="setup.properties"/>
+    <property file="conf/jcart.properties"/>
+
+    <property name="jchem.home" value=".."/>
+    <property name="jcserver.home" value="${basedir}"/>
+    <property name="rmi.connect.string" value="${jchem.server.host}:${jchem.server.port}"/>
+
+    <property name="oracle.home" value="${env.ORACLE_HOME}"/>
+    <property name="oracle.jdbc.driver" value="${oracle.home}/jdbc/lib/ojdbc14.jar"/>
+
+    <property name="cartridge.config.file" value="conf/jcart.properties"/>
+    <property name="logging.config.class"
+              value="chemaxon.jchem.cartridge.util.LoggingConfigurator"/>
+
+    <property name="jcserver.debug.cfg" value=""/>
+
+    <path id="install.classpath">
+        <pathelement location="${oracle.jdbc.driver}" />
+        <fileset dir="${jchem.home}/lib">
+                <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+    <!-- ==============================================
+                        JCART SERVER CTRL
+         ============================================== -->
+    <target name="jcart.server.ctrl" unless="no.jcart.server">
+        <java jvm="${java.home}/bin/java"
+              classname="${classname}"
+              fork="${fork}"
+              dir="${jcserver.home}"
+              spawn="${spawn}"
+              >
+            <jvmarg line="${jcserver.debug.cfg} -server -Xmx${jcserver.maxmem}"/>
+
+            <sysproperty key="user.home" value="${user.home}"/>
+            <sysproperty key="java.util.logging.config.class"
+                         value="${logging.config.class}"/>
+            <sysproperty key="chemaxon.jchem.cartridge.config.file"
+                         value="${cartridge.config.file}"/>
+
+            <sysproperty key="emma.coverage.out.file"
+                         value="${emma.out.dir}/instr/coverage.emma" />
+            <sysproperty key="emma.coverage.out.merge" value="true" />
+
+            <classpath>
+                <path refid="install.classpath"/>
+            </classpath>
+            <arg value="--no-pwprompt"/>
+            <arg value="${arg}"/>
+        </java>
+    </target>
+
+    <!-- ==============================================
+                        START JCART SERVER 
+         ============================================== -->
+    <target name="start.jcart.server" unless="no.jcart.server">
+        <antcall target="jcart.server.ctrl">
+            <param name="classname"
+                   value="chemaxon.jchem.cartridge.rmi.impl.AdminImpl"/>
+            <param name="fork" value="true"/>
+            <param name="spawn" value="true"/>
+            <param name="arg" value="start"/>
+        </antcall>
+        <echo message="Wating for jcart server to start..."/>
+        <sleep seconds="5"/>
+        <echo message="JCart server has hopefully started."/>
+    </target>
+
+    <!-- ==============================================
+                        STOP JCART SERVER 
+         ============================================== -->
+    <target name="stop.jcart.server" unless="no.jcart.server">
+        <antcall target="jcart.server.ctrl">
+            <param name="classname"
+                   value="chemaxon.jchem.cartridge.rmi.impl.AdminImpl"/>
+            <param name="fork" value="true"/>
+            <param name="spawn" value="false"/>
+            <param name="arg" value="stop"/>
+        </antcall>
+    </target>
+
+
+    <!-- ==============================================
+                        create.user
+         ============================================== -->
+    <target name="create.user">
+        <echo file="cmd.sql">
+create user ${jcusr} identified by ${jcusr.password} default tablespace users;
+grant connect to ${jcusr};
+grant resource to ${jcusr};
+grant create synonym to ${jcusr};
+grant select on v_$instance to ${jcusr};
+call dbms_java.grant_permission(upper('${jcusr}'),
+                        'SYS:java.net.SocketPermission',
+                        '${jchem.server.host}', 'resolve' );
+call dbms_java.grant_permission(upper('${jcusr}'),
+                        'SYS:java.net.SocketPermission',
+                        '${jchem.server.host}', 'resolve,connect' );
+quit
+        </echo>
+        <exec executable="${oracle.home}/bin/sqlplus" failonerror="true">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="system/${system.password}@${tnsname}"/>
+            <arg value="@cmd.sql"/>
+        </exec>
+    </target>
+
+
+    <target name="create.config.user">
+        <antcall target="create.user">
+            <param name="jcusr" value="${jcusr}"/>
+        </antcall>
+    </target>
+
+    <target name="create.config.users">
+        <antcall target="create.config.user">
+            <param name="jcusr" value="${jchemowner}"/>
+            <param name="jcusr.password" value="${jchemowner.password}"/>
+        </antcall>
+    </target>
+
+    <!-- ==============================================
+                        install.cartridge
+         ============================================== -->
+    <target name="core.install.cartridge.windows">
+        <exec dir="${jchem.home}/cartridge"
+            executable="cmd" failonerror="true">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="/C"/>
+            <arg value=".\install.bat"/>
+            <arg value="${jchemowner}/${jchemowner.password}@${tnsname}"/>
+            <arg value="${rmi.connect.string}"/>
+        </exec>
+    </target>
+    <target name="core.install.cartridge.unix">
+        <exec dir="${jchem.home}/cartridge"
+            executable="bash" failonerror="true">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <env key="ORACLE_JDBC_CONNECT_STRING"
+                 value="${jchemowner}/${jchemowner.password}@${oracle.server.host}:${oracle.server.port}:${oracle.server.instance}"/>
+            <arg value="./install.sh"/>
+            <arg value="${jchemowner}/${jchemowner.password}@${tnsname}"/>
+            <arg value="${rmi.connect.string}"/>
+        </exec>
+    </target>
+    <target name="install.cartridge">
+        <antcall target="start.jcart.server"/>
+        <exec dir="${jchem.home}/cartridge"
+            executable="${oracle.home}/bin/sqlplus" failonerror="true">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="${jchemowner}/${jchemowner.password}@${tnsname}"/>
+            <arg value="@${jchem.home}/cartridge/drop-force.sql"/>
+        </exec>
+        <condition property="install.target.os" value="windows" else="unix">
+        <and>
+            <os family="windows"/>
+        </and>
+        </condition>
+        <antcall target="core.install.cartridge.${install.target.os}"/>
+
+        <antcall target="stop.jcart.server"/>
+    </target>
+
+    <target name="create.public.synonyms">
+        <echo file="cmd.sql">call ${jchemowner}.privman_pkg.public_syns_for_jcobjs('${jchemowner}');</echo>
+        <exec failonerror="true" executable="${oracle.home}/bin/sqlplus">
+            <arg value="system/${dba.password}@${tnsname}"/>
+            <arg value="@cmd.sql"/>
+        </exec>
+    </target>
+
+    <!-- ==============================================
+                        config.jcart.user
+         ============================================== -->
+    <target name="config.jcart.user">
+        <exec dir="${user.dir}" executable="${oracle.home}/bin/sqlplus"
+                failonerror="true">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="${jchemowner}/${jchemowner.password}@${tnsname}"/>
+            <arg value="@${jchem.home}/cartridge/privman.sql"/>
+        </exec>
+
+        <echo file="cmd.sql">grant execute on privman_pkg to ${jchemuser};
+call privman_pkg.grants_on_jcobjs(
+        '${jchemowner}',
+        '${jchemuser}');
+quit</echo>
+        <exec failonerror="true" executable="${oracle.home}/bin/sqlplus">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="${jchemowner}/${jchemowner.password}@${tnsname}"/>
+            <arg value="@cmd.sql"/>
+        </exec>
+
+        <echo file="cmd.sql">create or replace synonym privman_pkg for ${jchemowner}.privman_pkg;
+call privman_pkg.syns_for_jcobjs('${jchemowner}');</echo>
+        <exec failonerror="true" executable="${oracle.home}/bin/sqlplus">
+            <arg value="${jchemuser}/${jchemuser.password}@${tnsname}"/>
+            <arg value="@cmd.sql"/>
+        </exec>
+    </target>
+
+    <!-- ==============================================
+                        config.idx.for.user
+         ============================================== -->
+    <target name="config.idx.for.user">
+         <echo file="cmd.sql">
+             set serveroutput on 10000
+             set echo on
+             call ${jchemowner}.privman_pkg.grants_on_jcidx(
+                '${jchemuser}',
+                '${index.owner}',
+                '${index.name}',
+                1,
+                0,
+                0,
+                0);</echo>
+        <exec failonerror="true" executable="${oracle.home}/bin/sqlplus">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="${index.owner}/tiger@${tnsname}"/>
+            <arg value="@cmd.sql"/>
+        </exec>
+    </target>
+
+    <target name="all" depends="install">
+        <antcall target="config.jcart.user"/>
+    </target>
+
+    <target name="set.rmi.server">
+        <echo file="cmd.sql">set echo on
+            call jchem_core_pkg.set_master_property(null, 'rmi.server.1', '${jchem.server.host}:${jchem.server.port}');
+        </echo>
+        <exec failonerror="true" executable="${oracle.home}/bin/sqlplus">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="${jchemowner}/tiger@${tnsname}"/>
+            <arg value="@cmd.sql"/>
+        </exec>
+    </target>
+
+    <target name="reindex" if="drop.recreate.indexes">
+        <echo file="cmd.sql">
+set serveroutput on
+set feed off
+set head off
+spool drop_recreate_indexes.lst
+
+        declare
+    cursor c1 is select a.owner, a.index_name, a.parameters, a.table_owner, a.table_name,
+                        b.column_name
+                 from all_indexes a, all_ind_columns b
+                 where a.ityp_owner = upper('${jchemowner}')
+                    and a.ityp_name = 'JC_IDXTYPE'
+                    and a.owner = b.index_owner
+                    and a.index_name = b.index_name;
+    drop_sql varchar(32000);
+    create_sql varchar(32000);
+begin
+    jchem_core_pkg.use_password('${dba.password}');
+    for t in c1 loop
+        drop_sql := 'drop index ' || t.owner || '.' || t.index_name || ' force';
+        create_sql := 'create index ' || t.owner || '.' || t.index_name
+                        || ' on ' || t.table_owner || '.' || t.table_name
+                        || '(' || t.column_name  || ') indextype is '
+                        || '${jchemowner}.jc_idxtype';
+        if t.parameters is not null then
+            create_sql := create_sql || ' parameters(''' || t.parameters || ''')';
+        end if;
+        dbms_output.put_line(drop_sql);
+        execute immediate drop_sql;
+        dbms_output.put_line(create_sql);
+        execute immediate create_sql;
+    end loop;
+end;
+/
+set echo off
+spool off
+        </echo>
+        <exec failonerror="true" executable="${oracle.home}/bin/sqlplus">
+            <arg value="system/${dba.password}@${tnsname}"/>
+            <arg value="@cmd.sql"/>
+        </exec>
+    </target>
+
+    <target name="install" depends="stop.jcart.server">
+       <antcall target="create.config.users"/>
+       <antcall target="install.cartridge"/>
+       <antcall target="create.public.synonyms"/>
+    </target>
+
+    <target name="upgrade" depends="stop.jcart.server">
+        <antcall target="install.cartridge"/>
+    </target>
+
+    <target name="uninstall" depends="stop.jcart.server">
+        <exec dir="${jchem.home}/cartridge"
+            executable="${oracle.home}/bin/sqlplus" failonerror="true">
+            <env key="ORACLE_HOME" value="${oracle.home}"/>
+            <arg value="${jchemowner}/${jchemowner.password}@${tnsname}"/>
+            <arg value="@${jchem.home}/cartridge/drop-force.sql"/>
+        </exec>
+    </target>
+
+</project>

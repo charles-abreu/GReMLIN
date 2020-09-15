@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O",
+            "residueNumber": "121",
+            "residueName": "GLY",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor/aromatic/donor",
+            "atomTypeInt": "30",
+            "atomName": "N3",
+            "residueNumber": "301",
+            "residueName": "0RB",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.5627770094177134"
+        }
+    ],
+    "id": 103,
+    "string": "v 0 2\nv 1 30\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "4ESI.A"
+}

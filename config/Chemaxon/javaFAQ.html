@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="jchemmanuals.css">
+  <title>JChem Base FAQ for Java</title>
+</head>
+<body>
+<center>
+<h1>JChem Base FAQ for Java</h1>
+</center>
+<ul>
+      <li><a href="#jvm">Which Java virtual machine should I use with JChem?</a></li>
+      <li><a href="#apache">How can I integrate Apache, Tomcat, and JChem?</a></li>        
+      <li><a href="#outofmemory">I get out of memory error.</a></li>
+      <li><a href="#lowmemcache">I get a warning <i>"Table &lt;table&gt; 
+	  could not fit into structure cache (out of memory)."</i>.</span></li>
+</ul>
+
+
+<center><div class="lenia">&nbsp;</div></center>
+<ul>	
+	 <li><b>
+    	   <a name="jvm"></a>Which Java virtual machine should I
+		use with JChem?</b>
+		<p>
+		JChem requires Sun Java Runtime Environment (JRE) 1.5
+		JRE Standard Edition or better. Equivalent JREs from other vendors may work, but
+		not recommended. For maximum performance we recommend to use the
+		latest stable release from
+		<a href="http://java.sun.com/" target="_blank">Sun Microsystems</a>.
+		</p>
+	 </li>
+
+	  <li><b>
+	     <a name="apache"></a>How can I integrate Apache,
+		Tomcat, and JChem?</b>
+	    <p>	    
+	    <ol>
+	      <li>Install and test <a href="http://java.sun.com/products/jsp/"
+		 target="_blank">Tomcat</a> (before starting, set the JAVA_HOME
+		environmental variable)<br>
+		See the user guide: &lt;Tomcat home&gt;/doc/index.html </li>
+	      <li>Follow the <a href="../../examples/db_search/setup.html">instructions
+		for adding JChem into Tomcat</a> </li>
+	      <li>Test JChem under Tomcat:<br>
+	        <a href="http://localhost:8080/jchem/" target="_blank">http://localhost:8080/jchem/</a><br>
+	        <a href="http://localhost:8080/jchem/examples/db_search/index.jsp"
+	 	target="_blank">http://localhost:8080/jchem/examples/db_search/index.jsp</a>
+	      </li>
+	      <li>Specify Tomcat in Apache's conf/httpd.conf by adding a line
+		like<br>
+	        <code>Include &lt;Tomcat home&gt;/conf/tomcat-apache.conf</code>
+	      </li>
+	      <li>Add mod_jserv into Apache as described in Tomcat's user guide
+	      </li>
+	      <li>Restart Tomcat and restart Apache </li>
+	      <li>Test JChem under Apache:<br>
+	        <a href="http://localhost/jchem/" target="_blank">http://localhost/jchem/</a><br>
+	        <a href="http://localhost/jchem/examples/db_search/index.jsp"
+	 	target="_blank">http://localhost/jchem/examples/db_search/index.jsp</a>
+	      </li>
+	    </ol>
+	</p>  
+	</li>
+	
+	
+	<li><b><a name="lowmemcache"></a>I get a warning <i>"Table &lt;table&gt; 
+	  could not fit into structure cache (out of memory)."</i>.</b>
+		<p>
+		    This indicates that the table could not be loaded into the 
+		    structure cache due to lack of sufficient memory.
+		    There should be sufficient memory for the Java Virtual Machine 
+		    (JVM) to load the structural and fingerprint information of all 
+		    structure tables.<br>    
+		    Please see the <a href="#cacheSize">this section</a> on how 
+		    to estimate the memory need for your structure tables.<br>
+		    The <a href="#outofmemory">out of memory section</a> describes 
+		    how to allocate more memory for the JVM. 
+		</p>    
+	  </li>  
+  </ul>
+ 
+      <p><b>If your question is not answered, please check out our
+      <a href="http:/www.chemaxon.com/forum">forum</a>
+or
+      <script language="JavaScript"><!--
+document.write('<a href="mailto:support');
+document.write('@');
+document.write('chemaxon.com">contact us</a>');
+//--></script>.
+      </b>    
+      </p>
+      <center><div class="lenia">&nbsp;</div></center>
+      <center><font size="-2" face="helvetica">
+Copyright &copy; 1999-2010
+      <a href="http://www.chemaxon.com">ChemAxon Ltd.</a>
+&nbsp;&nbsp;&nbsp;All rights reserved.
+      </font></center>
+
+</body>
+</html>

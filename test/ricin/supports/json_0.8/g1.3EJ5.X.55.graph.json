@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD2",
+            "residueNumber": "96",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OAD",
+            "residueNumber": "300",
+            "residueName": "EJ5",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OAB",
+            "residueNumber": "300",
+            "residueName": "EJ5",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "4.738128005868984"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "5.417574918725167"
+        }
+    ],
+    "id": 55,
+    "string": "v 0 26\nv 1 26\nv 2 26\ne 0 1 31\ne 0 2 31\n",
+    "group": "1",
+    "pdbID": "3EJ5.X"
+}

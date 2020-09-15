@@ -1,0 +1,72 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                36
+            ],
+            "index": 0,
+            "chain": "C",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "OD1",
+            "residueNumber": "1010",
+            "residueName": "ASN",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                36
+            ],
+            "index": 1,
+            "chain": "C",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O2",
+            "residueNumber": "5501",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                36
+            ],
+            "index": 2,
+            "chain": "C",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O3",
+            "residueNumber": "5501",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                36
+            ],
+            "source": 0,
+            "target": 2,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.7386326880397864"
+        },
+        {
+            "patterns": [
+                36
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.5881294403487645"
+        }
+    ],
+    "id": 46,
+    "string": "v 0 2\nv 1 10\nv 2 10\ne 0 1 29\ne 0 2 29\n",
+    "group": "1",
+    "pdbID": "1RZO.C"
+}

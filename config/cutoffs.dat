@@ -1,0 +1,5 @@
+aromatic-stacking,1.50,3.50
+hydrogen-bond,2.00,3.00
+hydrofobic,2.00,3.80
+repulsive,2.00,6.00
+salt-bridge,2.00,6.00

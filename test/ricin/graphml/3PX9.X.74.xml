@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="d0" for="node" attr.name="nodetype" attr.type="int"/>
+<key id="d1" for="edge" attr.name="edgetype" attr.type="int"/>
+<key id="d2" for="node" attr.name="nodelabel" attr.type="string"/>
+<key id="d3" for="edge" attr.name="edgelabel" attr.type="string"/>
+<key id="d4" for="edge" attr.name="edgeDistance" attr.type="int"/>
+<graph id="74" edgedefault="undirected">
+<node id="n0">
+<data key="d0">21</data>
+<data key="d2">TYR:80:CG</data>
+</node>
+<node id="n1">
+<data key="d0">21</data>
+<data key="d2">TYR:80:CD1</data>
+</node>
+<node id="n2">
+<data key="d0">21</data>
+<data key="d2">TYR:80:CE1</data>
+</node>
+<node id="n3">
+<data key="d0">7</data>
+<data key="d2">ILE:172:CG2</data>
+</node>
+<node id="n4">
+<data key="d0">7</data>
+<data key="d2">ILE:172:CD1</data>
+</node>
+<node id="n5">
+<data key="d0">7</data>
+<data key="d2">JP3:1:C1</data>
+</node>
+<node id="n6">
+<data key="d0">7</data>
+<data key="d2">JP3:1:C2</data>
+</node>
+<node id="n7">
+<data key="d0">7</data>
+<data key="d2">JP3:1:C3</data>
+</node>
+<node id="n8">
+<data key="d0">7</data>
+<data key="d2">JP3:1:C4</data>
+</node>
+<edge id="e0" source="n1" target="n5">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.5391219249977817</data>
+</edge>
+<edge id="e1" source="n3" target="n6">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.3971343806214085</data>
+</edge>
+<edge id="e2" source="n4" target="n5">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.3315275775535764</data>
+</edge>
+<edge id="e3" source="n3" target="n7">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.6049643548861896</data>
+</edge>
+<edge id="e4" source="n2" target="n8">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.274206010623033</data>
+</edge>
+<edge id="e5" source="n0" target="n6">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.50788397755684</data>
+</edge>
+<edge id="e6" source="n1" target="n8">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.6383136203466577</data>
+</edge>
+<edge id="e7" source="n2" target="n7">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.4182725169301524</data>
+</edge>
+<edge id="e8" source="n1" target="n7">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.624299104654582</data>
+</edge>
+<edge id="e9" source="n1" target="n6">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.5611034806643858</data>
+</edge>
+</graph>
+</graphml>

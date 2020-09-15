@@ -3,10 +3,10 @@
 GReMLIN is a scalable graph based strategy which models protein-ligand interfaces as graphs.
 
 ### 1. Prerequisites
-  Python 3x (requiriments.txt)
-  java 1.7.0
-  openbabel v2.3.1
-  Chemaxon
+  * Python 3x (requiriments.txt)
+  * java 1.7.0
+  * openbabel v2.3.1
+  * Chemaxon
   
 ### 2. Run GReMLIN
  

@@ -1,7 +1,0 @@
-#install4j response file for JChem 5.3.8
-#Fri Sep 10 07:45:54 BRT 2010
-createDesktopLinkAction$Boolean=true
-executeLauncherAction$Boolean=true
-sys.languageId=en
-sys.installationDir=/scratch/cvbioinfo/software/Chemaxon
-add2path$Boolean=false

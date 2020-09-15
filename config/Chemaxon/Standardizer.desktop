@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Standardizer
-Exec=/bin/sh "/scratch/cvbioinfo/software/Chemaxon/Standardizer"
-Icon=/scratch/cvbioinfo/software/Chemaxon/.install4j/Standardizer.png
-Categories=Application;

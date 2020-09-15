@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Reactor
-Exec=/bin/sh "/scratch/cvbioinfo/software/Chemaxon/Reactor"
-Icon=/scratch/cvbioinfo/software/Chemaxon/.install4j/Reactor.png
-Categories=Application;

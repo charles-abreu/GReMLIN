@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=MarvinView
-Exec=/bin/sh "/scratch/cvbioinfo/software/Chemaxon/MarvinBeans/MarvinView"
-Icon=/scratch/cvbioinfo/software/Chemaxon/MarvinBeans/.install4j/MarvinView.png
-Categories=Application;

@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=LicenseManager
-Exec=/bin/sh "/scratch/cvbioinfo/software/Chemaxon/LicenseManager"
-Icon=/scratch/cvbioinfo/software/Chemaxon/.install4j/LicenseManager.png
-Categories=Application;

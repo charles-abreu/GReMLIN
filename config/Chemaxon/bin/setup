@@ -1,8 +1,0 @@
-#!/bin/bash
-# Set Java path
-
-JVMABSPATH="/scratch/cvbioinfo/software/Chemaxon/jre/bin/java"
-JVMPATH=$JVMABSPATH
-if [ ! -f "$JVMPATH" ]; then
-    JVMPATH=java
-fi

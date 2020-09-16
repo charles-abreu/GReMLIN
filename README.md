@@ -15,10 +15,10 @@ You could include the Chemaxon software by moving the Chemaxon folder to GReMLIN
  
 The program is run by the python script called "gremlin.py". To use GReMLIN, simply
 type "python3 gremlin.py", using the parameters -d followed by the name of a directory 
-contaning many PDB valid files, and -o followed by thename of a output directory to save 
+contaning many PDB valid files, and -o followed by the name of a output directory to save 
 the results, as shown below
 
-**python3 gemlin.py -d datesets/ricin -o outputDir/**
+**python3 gemlin.py -d datesets/ricin/ -o outputDir/**
 
  
 ### 3. Results

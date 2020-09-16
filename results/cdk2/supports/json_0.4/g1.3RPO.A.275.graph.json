@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CB",
+            "residueNumber": "131",
+            "residueName": "GLN",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C21",
+            "residueNumber": "778",
+            "residueName": "24Z",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.748903306301724"
+        }
+    ],
+    "id": 275,
+    "string": "v 0 7\nv 1 7\ne 0 1 23\n",
+    "group": "1",
+    "pdbID": "3RPO.A"
+}

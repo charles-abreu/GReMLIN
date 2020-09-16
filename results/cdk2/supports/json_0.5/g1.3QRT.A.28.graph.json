@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CG2",
+            "residueNumber": "18",
+            "residueName": "VAL",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C21",
+            "residueNumber": "535",
+            "residueName": "X14",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.4980824747281205"
+        }
+    ],
+    "id": 28,
+    "string": "v 0 7\nv 1 7\ne 0 1 23\n",
+    "group": "1",
+    "pdbID": "3QRT.A"
+}

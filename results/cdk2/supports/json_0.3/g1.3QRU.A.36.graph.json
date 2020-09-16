@@ -1,0 +1,68 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                2
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CB",
+            "residueNumber": "80",
+            "residueName": "PHE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CG",
+            "residueNumber": "80",
+            "residueName": "PHE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 2,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C07",
+            "residueNumber": "493",
+            "residueName": "X19",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                2
+            ],
+            "source": 0,
+            "target": 2,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.4589527316804993"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 2,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.61081749746508"
+        }
+    ],
+    "id": 36,
+    "string": "v 0 7\nv 1 21\nv 2 7\ne 0 2 23\ne 1 2 23\n",
+    "group": "1",
+    "pdbID": "3QRU.A"
+}

@@ -1,0 +1,35 @@
+{
+    "nodes": [
+        {
+            "index": 0,
+            "atomType": "acceptor",
+            "atomTypeInt": "2"
+        },
+        {
+            "index": 1,
+            "atomType": "donor",
+            "atomTypeInt": "5"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": "29"
+        }
+    ],
+    "graphproperties": {
+        "inputgraphs": [
+            3,
+            137,
+            142,
+            94,
+            256,
+            164
+        ]
+    },
+    "group": "3",
+    "support": "0.2",
+    "id": "6"
+}

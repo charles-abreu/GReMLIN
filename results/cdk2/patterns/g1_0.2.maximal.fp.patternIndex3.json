@@ -1,0 +1,99 @@
+{
+    "nodes": [
+        {
+            "index": 0,
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7"
+        },
+        {
+            "index": 1,
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7"
+        },
+        {
+            "index": 2,
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": "23"
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": "23"
+        }
+    ],
+    "graphproperties": {
+        "inputgraphs": [
+            140,
+            116,
+            200,
+            66,
+            55,
+            92,
+            13,
+            173,
+            27,
+            81,
+            221,
+            144,
+            65,
+            131,
+            264,
+            294,
+            239,
+            177,
+            277,
+            102,
+            29,
+            259,
+            110,
+            136,
+            163,
+            120,
+            160,
+            303,
+            111,
+            26,
+            123,
+            219,
+            97,
+            148,
+            260,
+            228,
+            236,
+            101,
+            106,
+            166,
+            209,
+            195,
+            73,
+            276,
+            152,
+            127,
+            156,
+            50,
+            254,
+            88,
+            268,
+            196,
+            69,
+            243,
+            282,
+            77,
+            2,
+            267,
+            271
+        ]
+    },
+    "group": "1",
+    "support": "0.2",
+    "id": "3"
+}

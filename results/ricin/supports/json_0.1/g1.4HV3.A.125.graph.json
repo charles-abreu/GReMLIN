@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                37
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "N",
+            "residueNumber": "123",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                37
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O1",
+            "residueNumber": "301",
+            "residueName": "19L",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                37
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.864940837085472"
+        }
+    ],
+    "id": 125,
+    "string": "v 0 5\nv 1 2\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "4HV3.A"
+}

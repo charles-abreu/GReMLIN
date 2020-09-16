@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH1",
+            "residueNumber": "258",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH2",
+            "residueNumber": "258",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O1P",
+            "residueNumber": "301",
+            "residueName": "FMP",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "5.3504337207370405"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.398812339711706"
+        }
+    ],
+    "id": 83,
+    "string": "v 0 55\nv 1 55\nv 2 26\ne 0 2 19\ne 1 2 19\n",
+    "group": "1",
+    "pdbID": "3RTI.A"
+}

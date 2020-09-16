@@ -1,0 +1,144 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                3
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CB",
+            "residueNumber": "10",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CG2",
+            "residueNumber": "10",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "index": 2,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CB",
+            "residueNumber": "18",
+            "residueName": "VAL",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "index": 3,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CG2",
+            "residueNumber": "18",
+            "residueName": "VAL",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "index": 4,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "F1",
+            "residueNumber": "529",
+            "residueName": "25Z",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "index": 5,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "F2",
+            "residueNumber": "529",
+            "residueName": "25Z",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                3
+            ],
+            "source": 2,
+            "target": 4,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.488080560996261"
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "source": 3,
+            "target": 5,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.254145356310925"
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "source": 2,
+            "target": 5,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.5638825738230966"
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "source": 0,
+            "target": 4,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.465957443477913"
+        },
+        {
+            "patterns": [
+                3
+            ],
+            "source": 1,
+            "target": 4,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.120685341395376"
+        }
+    ],
+    "id": 276,
+    "string": "v 0 7\nv 1 7\nv 2 7\nv 3 7\nv 4 7\nv 5 7\ne 0 4 23\ne 1 4 23\ne 2 4 23\ne 2 5 23\ne 3 5 23\n",
+    "group": "1",
+    "pdbID": "3RPR.A"
+}

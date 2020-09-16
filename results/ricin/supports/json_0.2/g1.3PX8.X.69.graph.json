@@ -1,0 +1,251 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                7
+            ],
+            "index": 0,
+            "chain": "X",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CG",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "index": 1,
+            "chain": "X",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CD1",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 2,
+            "chain": "X",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CD2",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 3,
+            "chain": "X",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CE2",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 4,
+            "chain": "X",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CG2",
+            "residueNumber": "172",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 5,
+            "chain": "X",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CD1",
+            "residueNumber": "172",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 6,
+            "chain": "X",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C1",
+            "residueNumber": "1",
+            "residueName": "JP2",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 7,
+            "chain": "X",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C2",
+            "residueNumber": "1",
+            "residueName": "JP2",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 8,
+            "chain": "X",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C3",
+            "residueNumber": "1",
+            "residueName": "JP2",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 9,
+            "chain": "X",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C4",
+            "residueNumber": "1",
+            "residueName": "JP2",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 2,
+            "target": 7,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.655152801183557"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 3,
+            "target": 9,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.5040562210101602"
+        },
+        {
+            "patterns": [],
+            "source": 4,
+            "target": 7,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.355793199826235"
+        },
+        {
+            "patterns": [],
+            "source": 5,
+            "target": 6,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.443092069637407"
+        },
+        {
+            "patterns": [],
+            "source": 4,
+            "target": 8,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.634762578216079"
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "source": 0,
+            "target": 7,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.4942853346571456"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 3,
+            "target": 8,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.6374085555516036"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 2,
+            "target": 8,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.7469049894546305"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 2,
+            "target": 6,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.6424018174825252"
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "source": 1,
+            "target": 7,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.7798309486007446"
+        }
+    ],
+    "id": 69,
+    "string": "v 0 21\nv 1 21\nv 2 21\nv 3 21\nv 4 7\nv 5 7\nv 6 7\nv 7 7\nv 8 7\nv 9 7\ne 0 7 23\ne 1 7 23\ne 2 6 23\ne 2 7 23\ne 2 8 23\ne 3 8 23\ne 3 9 23\ne 4 7 23\ne 4 8 23\ne 5 6 23\n",
+    "group": "1",
+    "pdbID": "3PX8.X"
+}

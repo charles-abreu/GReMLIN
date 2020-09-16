@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CG2",
+            "residueNumber": "10",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CL22",
+            "residueNumber": "483",
+            "residueName": "X6A",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.5249190061616913"
+        }
+    ],
+    "id": 72,
+    "string": "v 0 7\nv 1 7\ne 0 1 23\n",
+    "group": "1",
+    "pdbID": "3QWJ.A"
+}

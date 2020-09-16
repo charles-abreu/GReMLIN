@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "index": 0,
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26"
+        },
+        {
+            "index": 1,
+            "atomType": "donor/positive",
+            "atomTypeInt": "55"
+        },
+        {
+            "index": 2,
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": "19"
+        },
+        {
+            "source": 1,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": "19"
+        }
+    ],
+    "graphproperties": {
+        "inputgraphs": [
+            71,
+            117
+        ]
+    },
+    "group": "2",
+    "support": "0.1",
+    "id": "5"
+}

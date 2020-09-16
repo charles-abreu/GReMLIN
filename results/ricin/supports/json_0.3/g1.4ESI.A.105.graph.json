@@ -1,0 +1,96 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                2
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CG",
+            "residueNumber": "123",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CD2",
+            "residueNumber": "123",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 2,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CE2",
+            "residueNumber": "123",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 3,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C7",
+            "residueNumber": "301",
+            "residueName": "0RB",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                2
+            ],
+            "source": 0,
+            "target": 3,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.743852160542668"
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "source": 1,
+            "target": 3,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.18037655003303"
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "source": 2,
+            "target": 3,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.68937745425973"
+        }
+    ],
+    "id": 105,
+    "string": "v 0 21\nv 1 21\nv 2 21\nv 3 7\ne 0 3 23\ne 1 3 23\ne 2 3 23\n",
+    "group": "1",
+    "pdbID": "4ESI.A"
+}

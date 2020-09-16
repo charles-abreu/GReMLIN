@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "N",
+            "residueNumber": "212",
+            "residueName": "GLY",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O2",
+            "residueNumber": "301",
+            "residueName": "1MX",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.8720673738615523"
+        }
+    ],
+    "id": 147,
+    "string": "v 0 5\nv 1 2\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "4MX1.A"
+}

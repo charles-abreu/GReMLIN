@@ -1,0 +1,72 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                2
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CB",
+            "residueNumber": "31",
+            "residueName": "ALA",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CD1",
+            "residueNumber": "134",
+            "residueName": "LEU",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 2,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C12",
+            "residueNumber": "781",
+            "residueName": "22Z",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                2
+            ],
+            "source": 0,
+            "target": 2,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.5024078860121377"
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "source": 1,
+            "target": 2,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.4089725724915962"
+        }
+    ],
+    "id": 268,
+    "string": "v 0 7\nv 1 7\nv 2 7\ne 0 2 23\ne 1 2 23\n",
+    "group": "1",
+    "pdbID": "3ROY.A"
+}

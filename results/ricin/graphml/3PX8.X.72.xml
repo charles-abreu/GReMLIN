@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="d0" for="node" attr.name="nodetype" attr.type="int"/>
+<key id="d1" for="edge" attr.name="edgetype" attr.type="int"/>
+<key id="d2" for="node" attr.name="nodelabel" attr.type="string"/>
+<key id="d3" for="edge" attr.name="edgelabel" attr.type="string"/>
+<key id="d4" for="edge" attr.name="edgeDistance" attr.type="int"/>
+<graph id="72" edgedefault="undirected">
+<node id="n0">
+<data key="d0">21</data>
+<data key="d2">TYR:123:CG</data>
+</node>
+<node id="n1">
+<data key="d0">21</data>
+<data key="d2">TYR:123:CD2</data>
+</node>
+<node id="n2">
+<data key="d0">21</data>
+<data key="d2">TYR:123:CE2</data>
+</node>
+<node id="n3">
+<data key="d0">7</data>
+<data key="d2">JP2:1:C5</data>
+</node>
+<node id="n4">
+<data key="d0">7</data>
+<data key="d2">JP2:1:C6</data>
+</node>
+<node id="n5">
+<data key="d0">7</data>
+<data key="d2">JP2:1:C7</data>
+</node>
+<edge id="e0" source="n2" target="n5">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.6256239463022086</data>
+</edge>
+<edge id="e1" source="n1" target="n5">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.0966144416120005</data>
+</edge>
+<edge id="e2" source="n1" target="n3">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.417259867203547</data>
+</edge>
+<edge id="e3" source="n0" target="n5">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.73676036159666</data>
+</edge>
+<edge id="e4" source="n2" target="n3">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.535281176936284</data>
+</edge>
+<edge id="e5" source="n2" target="n4">
+<data key="d1">23</data>
+<data key="d3">HB</data>
+<data key="d4">3.5094991095596537</data>
+</edge>
+</graph>
+</graphml>

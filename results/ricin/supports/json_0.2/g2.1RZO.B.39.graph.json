@@ -1,0 +1,148 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "B",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD1",
+            "residueNumber": "2022",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "B",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OE1",
+            "residueNumber": "2026",
+            "residueName": "GLU",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "B",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NZ",
+            "residueNumber": "2040",
+            "residueName": "LYS",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                14
+            ],
+            "index": 3,
+            "chain": "B",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "ND2",
+            "residueNumber": "2046",
+            "residueName": "ASN",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 4,
+            "chain": "B",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O1",
+            "residueNumber": "5003",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 5,
+            "chain": "B",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O2",
+            "residueNumber": "5003",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                14
+            ],
+            "index": 6,
+            "chain": "B",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O3",
+            "residueNumber": "5003",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 5,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.5755888647064773"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 6,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.4441182459120117"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 4,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.551997844826677"
+        },
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 6,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.5709455459032995"
+        },
+        {
+            "patterns": [
+                14
+            ],
+            "source": 3,
+            "target": 6,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.655577903206761"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 5,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.8681117481716103"
+        }
+    ],
+    "id": 39,
+    "string": "v 0 26\nv 1 26\nv 2 55\nv 3 5\nv 4 10\nv 5 10\nv 6 10\ne 0 6 29\ne 1 4 29\ne 1 5 29\ne 2 5 29\ne 2 6 29\ne 3 6 29\n",
+    "group": "2",
+    "pdbID": "1RZO.B"
+}

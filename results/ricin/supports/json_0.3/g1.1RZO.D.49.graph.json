@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "D",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "ND2",
+            "residueNumber": "2079",
+            "residueName": "ASN",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "D",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O1",
+            "residueNumber": "5505",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "D",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O2",
+            "residueNumber": "5505",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.583571365377781"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.7488604911853924"
+        }
+    ],
+    "id": 49,
+    "string": "v 0 5\nv 1 10\nv 2 10\ne 0 1 29\ne 0 2 29\n",
+    "group": "1",
+    "pdbID": "1RZO.D"
+}

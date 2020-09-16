@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="d0" for="node" attr.name="nodetype" attr.type="int"/>
+<key id="d1" for="edge" attr.name="edgetype" attr.type="int"/>
+<key id="d2" for="node" attr.name="nodelabel" attr.type="string"/>
+<key id="d3" for="edge" attr.name="edgelabel" attr.type="string"/>
+<key id="d4" for="edge" attr.name="edgeDistance" attr.type="int"/>
+<graph id="97" edgedefault="undirected">
+<node id="n0">
+<data key="d0">26</data>
+<data key="d2">ASP:234:OD2</data>
+</node>
+<node id="n1">
+<data key="d0">330</data>
+<data key="d2">HIS:251:NE2</data>
+</node>
+<node id="n2">
+<data key="d0">5</data>
+<data key="d2">ASN:255:ND2</data>
+</node>
+<node id="n3">
+<data key="d0">10</data>
+<data key="d2">GAL:267:O3</data>
+</node>
+<edge id="e0" source="n0" target="n3">
+<data key="d1">29</data>
+<data key="d3">HP</data>
+<data key="d4">2.6339622244823495</data>
+</edge>
+<edge id="e1" source="n1" target="n3">
+<data key="d1">29</data>
+<data key="d3">HP</data>
+<data key="d4">2.7219498525872914</data>
+</edge>
+<edge id="e2" source="n2" target="n3">
+<data key="d1">29</data>
+<data key="d3">HP</data>
+<data key="d4">2.9724229174193897</data>
+</edge>
+</graph>
+</graphml>

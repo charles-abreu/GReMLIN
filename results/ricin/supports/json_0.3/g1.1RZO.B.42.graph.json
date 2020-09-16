@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                2
+            ],
+            "index": 0,
+            "chain": "B",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CZ2",
+            "residueNumber": "2037",
+            "residueName": "TRP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 1,
+            "chain": "B",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C5",
+            "residueNumber": "5003",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                2
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.76337016515782"
+        }
+    ],
+    "id": 42,
+    "string": "v 0 21\nv 1 7\ne 0 1 23\n",
+    "group": "1",
+    "pdbID": "1RZO.B"
+}

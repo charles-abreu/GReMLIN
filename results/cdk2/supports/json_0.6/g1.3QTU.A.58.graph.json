@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "OD1",
+            "residueNumber": "132",
+            "residueName": "ASN",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD1",
+            "residueNumber": "145",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "A",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "N05",
+            "residueNumber": "451",
+            "residueName": "X44",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 2,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.685642753606669"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.6915359927000746"
+        }
+    ],
+    "id": 58,
+    "string": "v 0 2\nv 1 26\nv 2 5\ne 0 2 29\ne 1 2 29\n",
+    "group": "1",
+    "pdbID": "3QTU.A"
+}

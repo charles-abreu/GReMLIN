@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD1",
+            "residueNumber": "86",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD2",
+            "residueNumber": "86",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "N21",
+            "residueNumber": "923",
+            "residueName": "X85",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.110607011135944"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 2,
+            "interactionType": "hydrogenbond/saltbridges",
+            "interactionTypeInt": 551,
+            "distance": "2.8038321989733994"
+        }
+    ],
+    "id": 225,
+    "string": "v 0 26\nv 1 26\nv 2 55\ne 0 2 19\ne 1 2 551\n",
+    "group": "1",
+    "pdbID": "3RAI.A"
+}

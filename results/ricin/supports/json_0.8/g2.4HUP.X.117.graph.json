@@ -1,0 +1,218 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OE2",
+            "residueNumber": "146",
+            "residueName": "GLU",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "X",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH1",
+            "residueNumber": "196",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "X",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NE",
+            "residueNumber": "197",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 3,
+            "chain": "X",
+            "atomType": "positive",
+            "atomTypeInt": "11",
+            "atomName": "CZ",
+            "residueNumber": "197",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 4,
+            "chain": "X",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH1",
+            "residueNumber": "197",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 5,
+            "chain": "X",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH2",
+            "residueNumber": "197",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 6,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O1A",
+            "residueNumber": "304",
+            "residueName": "MLA",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 7,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O1B",
+            "residueNumber": "304",
+            "residueName": "MLA",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 8,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O3A",
+            "residueNumber": "304",
+            "residueName": "MLA",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 9,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O3B",
+            "residueNumber": "304",
+            "residueName": "MLA",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 8,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "5.4821472982764705"
+        },
+        {
+            "patterns": [],
+            "source": 5,
+            "target": 9,
+            "interactionType": "hydrogenbond/saltbridges",
+            "interactionTypeInt": 551,
+            "distance": "2.7475461779558863"
+        },
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 9,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "3.254314520755485"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 9,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "4.918530979876003"
+        },
+        {
+            "patterns": [],
+            "source": 5,
+            "target": 8,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "3.6663134072253016"
+        },
+        {
+            "patterns": [],
+            "source": 4,
+            "target": 9,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.552497995606369"
+        },
+        {
+            "patterns": [],
+            "source": 3,
+            "target": 9,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "3.3444450959763112"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 6,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.875209226279422"
+        },
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 6,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.261965391694306"
+        },
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 7,
+            "interactionType": "hydrogenbond/saltbridges",
+            "interactionTypeInt": 551,
+            "distance": "2.862058350208814"
+        },
+        {
+            "patterns": [],
+            "source": 5,
+            "target": 7,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "3.9347908457756686"
+        }
+    ],
+    "id": 117,
+    "string": "v 0 26\nv 1 55\nv 2 55\nv 3 11\nv 4 55\nv 5 55\nv 6 26\nv 7 26\nv 8 26\nv 9 26\ne 0 8 31\ne 0 9 31\ne 1 6 19\ne 2 6 19\ne 2 7 551\ne 2 9 19\ne 3 9 19\ne 4 9 19\ne 5 7 19\ne 5 8 19\ne 5 9 551\n",
+    "group": "2",
+    "pdbID": "4HUP.X"
+}

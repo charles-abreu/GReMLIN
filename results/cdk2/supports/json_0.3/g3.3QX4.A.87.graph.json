@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                2
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CG2",
+            "residueNumber": "10",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                2
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CL21",
+            "residueNumber": "454",
+            "residueName": "X4B",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                2
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.6242121902559714"
+        }
+    ],
+    "id": 87,
+    "string": "v 0 7\nv 1 7\ne 0 1 23\n",
+    "group": "3",
+    "pdbID": "3QX4.A"
+}

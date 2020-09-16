@@ -1,0 +1,82 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NE",
+            "residueNumber": "234",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH2",
+            "residueNumber": "234",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O1A",
+            "residueNumber": "304",
+            "residueName": "MLA",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 3,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O3A",
+            "residueNumber": "304",
+            "residueName": "MLA",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "5.214345788303648"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 3,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.76276904751847"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 3,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "3.528103456532985"
+        }
+    ],
+    "id": 148,
+    "string": "v 0 55\nv 1 55\nv 2 26\nv 3 26\ne 0 2 19\ne 0 3 19\ne 1 3 19\n",
+    "group": "1",
+    "pdbID": "4MX1.A"
+}

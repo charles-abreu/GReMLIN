@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="d0" for="node" attr.name="nodetype" attr.type="int"/>
+<key id="d1" for="edge" attr.name="edgetype" attr.type="int"/>
+<key id="d2" for="node" attr.name="nodelabel" attr.type="string"/>
+<key id="d3" for="edge" attr.name="edgelabel" attr.type="string"/>
+<key id="d4" for="edge" attr.name="edgeDistance" attr.type="int"/>
+<graph id="16" edgedefault="undirected">
+<node id="n0">
+<data key="d0">26</data>
+<data key="d2">ASP:86:OD2</data>
+</node>
+<node id="n1">
+<data key="d0">55</data>
+<data key="d2">LYS:89:NZ</data>
+</node>
+<node id="n2">
+<data key="d0">55</data>
+<data key="d2">X11:300:N3</data>
+</node>
+<edge id="e0" source="n0" target="n2">
+<data key="d1">19</data>
+<data key="d3">SB</data>
+<data key="d4">4.166358721953739</data>
+</edge>
+<edge id="e1" source="n1" target="n2">
+<data key="d1">31</data>
+<data key="d3">RP</data>
+<data key="d4">4.886066516125213</data>
+</edge>
+</graph>
+</graphml>

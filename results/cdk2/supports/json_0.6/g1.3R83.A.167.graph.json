@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NZ",
+            "residueNumber": "89",
+            "residueName": "LYS",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "N06",
+            "residueNumber": "589",
+            "residueName": "Z14",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "5.993316777878503"
+        }
+    ],
+    "id": 167,
+    "string": "v 0 55\nv 1 55\ne 0 1 31\n",
+    "group": "1",
+    "pdbID": "3R83.A"
+}

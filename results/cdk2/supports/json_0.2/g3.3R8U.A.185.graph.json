@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                5
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O",
+            "residueNumber": "83",
+            "residueName": "LEU",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                5
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "N4",
+            "residueNumber": "465",
+            "residueName": "Z31",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                5
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.7490212803832574"
+        }
+    ],
+    "id": 185,
+    "string": "v 0 2\nv 1 10\ne 0 1 29\n",
+    "group": "3",
+    "pdbID": "3R8U.A"
+}

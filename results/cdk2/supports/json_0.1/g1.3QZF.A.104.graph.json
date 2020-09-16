@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD2",
+            "residueNumber": "86",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "N1",
+            "residueNumber": "299",
+            "residueName": "X66",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "3.7858235563744906"
+        }
+    ],
+    "id": 104,
+    "string": "v 0 26\nv 1 55\ne 0 1 19\n",
+    "group": "1",
+    "pdbID": "3QZF.A"
+}

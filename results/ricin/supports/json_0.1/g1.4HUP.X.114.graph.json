@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                36
+            ],
+            "index": 0,
+            "chain": "X",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O",
+            "residueNumber": "81",
+            "residueName": "VAL",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                36
+            ],
+            "index": 1,
+            "chain": "X",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "N1",
+            "residueNumber": "301",
+            "residueName": "19M",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                36
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.955798707625403"
+        }
+    ],
+    "id": 114,
+    "string": "v 0 2\nv 1 10\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "4HUP.X"
+}

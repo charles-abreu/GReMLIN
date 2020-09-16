@@ -1,0 +1,102 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "B",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD2",
+            "residueNumber": "22",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "B",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NZ",
+            "residueNumber": "40",
+            "residueName": "LYS",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "B",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "ND2",
+            "residueNumber": "46",
+            "residueName": "ASN",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 3,
+            "chain": "B",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O2",
+            "residueNumber": "264",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 4,
+            "chain": "B",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O3",
+            "residueNumber": "264",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 4,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.988626774958692"
+        },
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 4,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.774558163023437"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 4,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.5499768626401313"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 3,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.9688398407458774"
+        }
+    ],
+    "id": 93,
+    "string": "v 0 26\nv 1 55\nv 2 5\nv 3 10\nv 4 10\ne 0 4 29\ne 1 3 29\ne 1 4 29\ne 2 4 29\n",
+    "group": "1",
+    "pdbID": "3RTJ.B"
+}

@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                14
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "N",
+            "residueNumber": "15",
+            "residueName": "GLY",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                14
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O3",
+            "residueNumber": "304",
+            "residueName": "TRE",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                14
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.920403225583758"
+        }
+    ],
+    "id": 28,
+    "string": "v 0 5\nv 1 10\ne 0 1 29\n",
+    "group": "2",
+    "pdbID": "1J1M.A"
+}

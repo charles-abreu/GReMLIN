@@ -1,0 +1,382 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                7
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CG",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CG",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "index": 2,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CD1",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 3,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CD1",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "index": 4,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CD2",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 5,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CE1",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 6,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CE1",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "index": 7,
+            "chain": "A",
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21",
+            "atomName": "CE2",
+            "residueNumber": "80",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 8,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CG2",
+            "residueNumber": "172",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 9,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "CD1",
+            "residueNumber": "172",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 10,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C",
+            "residueNumber": "301",
+            "residueName": "1MX",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 11,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C1",
+            "residueNumber": "301",
+            "residueName": "1MX",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 12,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C2",
+            "residueNumber": "301",
+            "residueName": "1MX",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "index": 13,
+            "chain": "A",
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7",
+            "atomName": "C3",
+            "residueNumber": "301",
+            "residueName": "1MX",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                7
+            ],
+            "source": 0,
+            "target": 11,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.5502677363827093"
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "source": 2,
+            "target": 10,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.6788532180558655"
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "source": 4,
+            "target": 10,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.739792908704972"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 6,
+            "target": 12,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.5175409023918975"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 6,
+            "target": 10,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.331084808286935"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 5,
+            "target": 12,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.6793087666027717"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 3,
+            "target": 11,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.3654427643328026"
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "source": 1,
+            "target": 11,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.717505346331061"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 5,
+            "target": 13,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.5581878814924885"
+        },
+        {
+            "patterns": [],
+            "source": 9,
+            "target": 10,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.4491848312318663"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 3,
+            "target": 10,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.649748895472126"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 6,
+            "target": 13,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.2079953241861188"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 3,
+            "target": 12,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.501155380727911"
+        },
+        {
+            "patterns": [],
+            "source": 8,
+            "target": 11,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.405498201438374"
+        },
+        {
+            "patterns": [],
+            "source": 8,
+            "target": 12,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.566589968022678"
+        },
+        {
+            "patterns": [
+                6,
+                7
+            ],
+            "source": 6,
+            "target": 11,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.7389263164710815"
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "source": 7,
+            "target": 10,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": 23,
+            "distance": "3.417066870870396"
+        }
+    ],
+    "id": 139,
+    "string": "v 0 21\nv 1 21\nv 2 21\nv 3 21\nv 4 21\nv 5 21\nv 6 21\nv 7 21\nv 8 7\nv 9 7\nv 10 7\nv 11 7\nv 12 7\nv 13 7\ne 0 11 23\ne 1 11 23\ne 2 10 23\ne 3 10 23\ne 3 11 23\ne 3 12 23\ne 4 10 23\ne 5 12 23\ne 5 13 23\ne 6 10 23\ne 6 11 23\ne 6 12 23\ne 6 13 23\ne 7 10 23\ne 8 11 23\ne 8 12 23\ne 9 10 23\n",
+    "group": "1",
+    "pdbID": "4MX1.A"
+}

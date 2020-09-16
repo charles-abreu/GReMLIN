@@ -1,0 +1,62 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD2",
+            "residueNumber": "86",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NZ",
+            "residueNumber": "89",
+            "residueName": "LYS",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "A",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "N3",
+            "residueNumber": "300",
+            "residueName": "X11",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 2,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "4.166358721953739"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 2,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "4.886066516125213"
+        }
+    ],
+    "id": 16,
+    "string": "v 0 26\nv 1 55\nv 2 55\ne 0 2 19\ne 1 2 31\n",
+    "group": "1",
+    "pdbID": "3QQJ.A"
+}

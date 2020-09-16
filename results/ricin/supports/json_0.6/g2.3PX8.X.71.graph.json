@@ -1,0 +1,122 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "X",
+            "atomType": "donor",
+            "atomTypeInt": "5",
+            "atomName": "N",
+            "residueNumber": "123",
+            "residueName": "TYR",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD1",
+            "residueNumber": "124",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 2,
+            "chain": "X",
+            "atomType": "donor/positive",
+            "atomTypeInt": "55",
+            "atomName": "NH2",
+            "residueNumber": "134",
+            "residueName": "ARG",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 3,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OE2",
+            "residueNumber": "177",
+            "residueName": "GLU",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 4,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O2",
+            "residueNumber": "1",
+            "residueName": "JP2",
+            "color": "#9BCE91",
+            "isLigand": true
+        },
+        {
+            "patterns": [],
+            "index": 5,
+            "chain": "X",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O3",
+            "residueNumber": "1",
+            "residueName": "JP2",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 4,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "5.858195114538265"
+        },
+        {
+            "patterns": [],
+            "source": 3,
+            "target": 5,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "5.241782330467376"
+        },
+        {
+            "patterns": [],
+            "source": 2,
+            "target": 5,
+            "interactionType": "saltbridges",
+            "interactionTypeInt": 19,
+            "distance": "5.733978897763751"
+        },
+        {
+            "patterns": [],
+            "source": 1,
+            "target": 4,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "5.447146592483078"
+        },
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 4,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.846024947185109"
+        }
+    ],
+    "id": 71,
+    "string": "v 0 5\nv 1 26\nv 2 55\nv 3 26\nv 4 26\nv 5 26\ne 0 4 29\ne 1 4 31\ne 2 4 19\ne 2 5 19\ne 3 5 31\n",
+    "group": "2",
+    "pdbID": "3PX8.X"
+}

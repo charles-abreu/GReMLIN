@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<key id="d0" for="node" attr.name="nodetype" attr.type="int"/>
+<key id="d1" for="edge" attr.name="edgetype" attr.type="int"/>
+<key id="d2" for="node" attr.name="nodelabel" attr.type="string"/>
+<key id="d3" for="edge" attr.name="edgelabel" attr.type="string"/>
+<key id="d4" for="edge" attr.name="edgeDistance" attr.type="int"/>
+<graph id="144" edgedefault="undirected">
+<node id="n0">
+<data key="d0">26</data>
+<data key="d2">GLU:146:OE2</data>
+</node>
+<node id="n1">
+<data key="d0">55</data>
+<data key="d2">ARG:197:NE</data>
+</node>
+<node id="n2">
+<data key="d0">11</data>
+<data key="d2">ARG:197:CZ</data>
+</node>
+<node id="n3">
+<data key="d0">55</data>
+<data key="d2">ARG:197:NH1</data>
+</node>
+<node id="n4">
+<data key="d0">55</data>
+<data key="d2">ARG:197:NH2</data>
+</node>
+<node id="n5">
+<data key="d0">26</data>
+<data key="d2">MLA:303:O1B</data>
+</node>
+<node id="n6">
+<data key="d0">26</data>
+<data key="d2">MLA:303:O3A</data>
+</node>
+<node id="n7">
+<data key="d0">26</data>
+<data key="d2">MLA:303:O3B</data>
+</node>
+<edge id="e0" source="n0" target="n6">
+<data key="d1">31</data>
+<data key="d3">RP</data>
+<data key="d4">5.510364960689992</data>
+</edge>
+<edge id="e1" source="n3" target="n7">
+<data key="d1">551</data>
+<data key="d3">HP/SB</data>
+<data key="d4">2.9560490523670278</data>
+</edge>
+<edge id="e2" source="n2" target="n7">
+<data key="d1">19</data>
+<data key="d3">SB</data>
+<data key="d4">3.6617483529046617</data>
+</edge>
+<edge id="e3" source="n3" target="n5">
+<data key="d1">19</data>
+<data key="d3">SB</data>
+<data key="d4">4.011699016626247</data>
+</edge>
+<edge id="e4" source="n3" target="n6">
+<data key="d1">19</data>
+<data key="d3">SB</data>
+<data key="d4">3.6793855465281156</data>
+</edge>
+<edge id="e5" source="n1" target="n7">
+<data key="d1">19</data>
+<data key="d3">SB</data>
+<data key="d4">3.769521985610377</data>
+</edge>
+<edge id="e6" source="n0" target="n7">
+<data key="d1">31</data>
+<data key="d3">RP</data>
+<data key="d4">5.2446877886104915</data>
+</edge>
+<edge id="e7" source="n4" target="n7">
+<data key="d1">19</data>
+<data key="d3">SB</data>
+<data key="d4">4.852996393981764</data>
+</edge>
+</graph>
+</graphml>

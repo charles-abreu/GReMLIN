@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                36
+            ],
+            "index": 0,
+            "chain": "B",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O",
+            "residueNumber": "2010",
+            "residueName": "ILE",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                36
+            ],
+            "index": 1,
+            "chain": "B",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O1",
+            "residueNumber": "5004",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                36
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.9795211024592514"
+        }
+    ],
+    "id": 38,
+    "string": "v 0 2\nv 1 10\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "1RZO.B"
+}

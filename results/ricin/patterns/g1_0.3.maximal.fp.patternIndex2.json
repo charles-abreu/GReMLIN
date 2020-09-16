@@ -1,0 +1,73 @@
+{
+    "nodes": [
+        {
+            "index": 0,
+            "atomType": "hydrophobic",
+            "atomTypeInt": "7"
+        },
+        {
+            "index": 1,
+            "atomType": "aromatic/hydrophobic",
+            "atomTypeInt": "21"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrophobic",
+            "interactionTypeInt": "23"
+        }
+    ],
+    "graphproperties": {
+        "inputgraphs": [
+            16,
+            65,
+            64,
+            105,
+            78,
+            110,
+            149,
+            150,
+            9,
+            54,
+            53,
+            57,
+            6,
+            135,
+            95,
+            74,
+            132,
+            139,
+            99,
+            3,
+            18,
+            126,
+            120,
+            153,
+            14,
+            11,
+            25,
+            51,
+            113,
+            21,
+            72,
+            26,
+            42,
+            91,
+            131,
+            61,
+            107,
+            69,
+            41,
+            143,
+            66,
+            116,
+            87,
+            24
+        ]
+    },
+    "group": "1",
+    "support": "0.3",
+    "id": "2"
+}

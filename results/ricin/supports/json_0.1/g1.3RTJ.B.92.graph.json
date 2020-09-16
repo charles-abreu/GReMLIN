@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                4
+            ],
+            "index": 0,
+            "chain": "B",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD1",
+            "residueNumber": "22",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                4
+            ],
+            "index": 1,
+            "chain": "B",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "O4",
+            "residueNumber": "264",
+            "residueName": "GAL",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                4
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.5913502271981645"
+        }
+    ],
+    "id": 92,
+    "string": "v 0 26\nv 1 10\ne 0 1 29\n",
+    "group": "1",
+    "pdbID": "3RTJ.B"
+}

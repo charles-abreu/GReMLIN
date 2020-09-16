@@ -1,0 +1,42 @@
+{
+    "nodes": [
+        {
+            "patterns": [],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "OD2",
+            "residueNumber": "96",
+            "residueName": "ASP",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor/negative",
+            "atomTypeInt": "26",
+            "atomName": "O22",
+            "residueNumber": "301",
+            "residueName": "PT1",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [],
+            "source": 0,
+            "target": 1,
+            "interactionType": "repulsive",
+            "interactionTypeInt": 31,
+            "distance": "5.43714575857591"
+        }
+    ],
+    "id": 7,
+    "string": "v 0 26\nv 1 26\ne 0 1 31\n",
+    "group": "1",
+    "pdbID": "1BR6.A"
+}

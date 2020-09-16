@@ -26,9 +26,9 @@ def run(argv):
             print ('gremlin.py -d <dataset_dir> -o <out_dir>')
             sys.exit()
         elif opt in ("-d", "--dataset"):
-            data_dir = arg
+            data_dir = arg + os.sep
         elif opt in ("-o", "--output"):
-            out_dir = arg
+            out_dir = arg + os.sep
 
     fileList = glob(data_dir + os.sep +'*.pdb')
 

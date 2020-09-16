@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "patterns": [
+                7
+            ],
+            "index": 0,
+            "chain": "A",
+            "atomType": "acceptor",
+            "atomTypeInt": "2",
+            "atomName": "O",
+            "residueNumber": "81",
+            "residueName": "GLU",
+            "color": "#7CB4BE",
+            "isLigand": false
+        },
+        {
+            "patterns": [
+                7
+            ],
+            "index": 1,
+            "chain": "A",
+            "atomType": "acceptor/donor",
+            "atomTypeInt": "10",
+            "atomName": "N7",
+            "residueNumber": "457",
+            "residueName": "12Z",
+            "color": "#9BCE91",
+            "isLigand": true
+        }
+    ],
+    "links": [
+        {
+            "patterns": [
+                7
+            ],
+            "source": 0,
+            "target": 1,
+            "interactionType": "hydrogenbond",
+            "interactionTypeInt": 29,
+            "distance": "2.6995505181418653"
+        }
+    ],
+    "id": 251,
+    "string": "v 0 2\nv 1 10\ne 0 1 29\n",
+    "group": "3",
+    "pdbID": "3RKB.A"
+}
